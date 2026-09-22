@@ -22,7 +22,10 @@
                 const compSection = document.getElementById('competences');
                 compSection.style.display = 
                         compSection.style.display ==='none' ? 'block' : 'none';
-            
+            function toggleFormations(){
+                const compSection = document.getElementById('formations');
+                compSection.style.display = 
+                        compSection.style.display ==='none' ? 'block' : 'none';
             }
         </script>
        
@@ -35,14 +38,15 @@
                 <li>SQL (débutant)</li>
             </ul>
         </section>
-        <button onclick="toggleCompetences()">Afficher/Masquer compétences</button>
-        <section>
+        <button onclick="toggleCompetences()">Afficher/Masquer compétences ▲</button>
+        <section id='formations'>
             <h2>Diplômes</h2>
             <ul>
                 <li>Brevet des collèges</li>
                 <li>Baccalauréat</li>
             </ul>
         </section>
+        <button onclick="toggleFormations()">Afficher/Masquer formations ▲</button>
         <section>
             <h2>Centres d'intérêts</h2>
             <ul>
