@@ -16,13 +16,16 @@
             <p>Stage de 3ème : découverte de métiers informatiques            </p>
             <p>Stage de 2nd : Découverte de l'environnement web et des bases de données</p>
         </section>
+        
         <script>
             function toggleCompetences(){
                 const compSection = document.getElementById('competences');
                 compSection.style.display = 
                         compSection.style.display ==='none' ? 'block' : 'none';
+            
             }
         </script>
+        <button oneclick="toggleCompetences()">Afficher/Masquer compétences</button>
         <section id='competences'>
             <h3>Compétences et niveau</h3>
             <ul>
